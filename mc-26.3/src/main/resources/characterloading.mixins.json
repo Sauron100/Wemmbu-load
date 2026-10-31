@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "de.characterloading.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "ScreenMixin",
+    "SplashOverlayMixin",
+    "EntryListWidgetMixin"
+  ],
+  "injectors": { "defaultRequire": 0 }
+}

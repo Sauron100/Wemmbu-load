@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "characterloading",
+  "version": "${version}",
+  "name": "Character Loading Screens",
+  "description": "Replaces the Minecraft background and loading screen with Wemmbu / ManePear edit-style artwork. Pick your character via Mod Menu.",
+  "authors": ["you"],
+  "license": "All-Rights-Reserved",
+  "icon": "assets/characterloading/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.characterloading.CharacterLoadingClient"],
+    "modmenu": ["de.characterloading.ModMenuIntegration"]
+  },
+  "mixins": ["characterloading.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": { "modmenu": "*" }
+}
